@@ -16,8 +16,8 @@ class bankaccount
         username = username1;
         number = num1;
         balance = balance1;
-        l.info("your name is:" + username);
-        l.info("your account number is:" + number);
+        l.log(Level.INFO, () -> "Your name is:" +username);
+        l.log(Level.INFO, () -> "Your account number is:" +number);
         l.info("your account is created!!!");
     }
 
@@ -32,7 +32,7 @@ class bankaccount
     }
 
     void displaybalance() {
-        l.info("your current balance is:" + balance);
+        l.log(Level.INFO, () -> "Your current balance is:" +balance);
     }
 
     public static void main(String[] args) {
