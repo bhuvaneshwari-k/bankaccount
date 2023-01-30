@@ -1,18 +1,17 @@
 package org.example;
 
 import java.util.*;
-import java.lang.*;
 /**
  * Hello world!
  *
  */
-class bank
+class bankaccount
 {
     String username;
     long number;
     double balance;
 
-    public bank(String username1, long num1, double balance1) {
+    public bankaccount(String username1, long num1, double balance1) {
         username = username1;
         number = num1;
         balance = balance1;
@@ -43,7 +42,7 @@ class bank
         String username1 = s1.nextLine();
         System.out.println("Enter account number:");
         long num1 = s.nextLong();
-        bank ba = new bank(username1, num1, 0.0);
+        bankaccount ba = new bankaccount(username1, num1, 0.0);
         while (true) {
             System.out.println("1.Deposit\n2.Withdrawal\n3.Current Balance\n4.Exit");
             System.out.println("Enter your choice:");
