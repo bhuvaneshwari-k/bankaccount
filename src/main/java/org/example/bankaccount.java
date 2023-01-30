@@ -38,7 +38,7 @@ class bankaccount
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Scanner s1 = new Scanner(System.in);
-
+       static Logger l=Logger.getLogger("com.api.jar");
         l.info("Enter username:");
         String username1 = s1.nextLine();
         l.info("Enter account number:");
