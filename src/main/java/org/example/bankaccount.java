@@ -30,7 +30,7 @@ class bankaccount
         System.out.println("your amount is withdrawn successfully!!!");
     }
 
-    void balance() {
+    void displaybalance() {
         System.out.println("your current balance is:" + balance);
     }
 
@@ -58,7 +58,7 @@ class bankaccount
                     long amt1 = s.nextLong();
                     ba.withdrawal(amt1);
                 }
-                case 3 -> ba.balance();
+                case 3 -> ba.displaybalance();
                 default -> {
                     System.out.println("you are exiting...!");
                     System.exit(0);
