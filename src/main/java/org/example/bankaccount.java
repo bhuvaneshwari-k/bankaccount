@@ -5,14 +5,14 @@ import java.util.*;
  * Hello world!
  *
  */
-class bankaccount
+class Bankaccount
 {
     static Logger l=Logger.getLogger("com.api.jar");
     String username;
     long number;
     double balance;
 
-    public bankaccount(String username1, long num1, double balance1) {
+    public Bankaccount(String username1, long num1, double balance1) {
         username = username1;
         number = num1;
         balance = balance1;
@@ -43,7 +43,7 @@ class bankaccount
         String username1 = s1.nextLine();
         l.info("Enter account number:");
         long num1 = s.nextLong();
-        bankaccount ba = new bankaccount(username1, num1, 0.0);
+        Bankaccount ba = new Bankaccount(username1, num1, 0.0);
         while (true) {
             l.info("1.Deposit\n2.Withdrawal\n3.Current Balance\n4.Exit");
             l.info("Enter your choice:");
