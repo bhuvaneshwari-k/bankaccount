@@ -7,7 +7,7 @@ import java.util.*;
  */
 class Bankaccount
 {
-    static Logger l=Logger.getLogger("com.api.jar");
+    static Logger l=Logger.getLogger("welcome");
     String username;
     long number;
     double balance;
